@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p><input type="text" placeholder="Name" id="name"></p>
+    <p><input type="number" placeholder="Age" id="age"></p>
+
+    <input type="button" value="Enter" id="button">
+
+ 
+    <script>
+
+        document.getElementById("button").onclick = function(){
+
+            var Name = document.getElementById("name").value;
+            var Age = document.getElementById("age").value;
+
+            if(Name == "" || Age == "" ){
+                alert("Please Enter Your Name & Age !!")
+
+            }else{
+                alert("Your name is " + Name + "\nYour age is " + Age)
+            }
+
+
+
+
+        }
+
+
+
+    </script>
+</body>
+</html>
